@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+	android:background="#0f0f">
+	
+		<ImageView
+		    android:id="@+id/voicenote_row_header"
+		    android:layout_width="wrap_content"
+		    android:src="@drawable/arrow"
+		    android:layout_height="wrap_content"	   
+			android:layout_marginRight="5dp"
+			android:layout_centerVertical="true"
+			android:layout_alignParentRight="true"/> 
+			
+		<TextView  
+		    android:id="@+id/voicenote_row_title"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="40dp"
+			android:textSize="23px"
+			android:textStyle="bold"
+			android:singleLine="true"
+			android:gravity="center_vertical"
+			android:layout_centerVertical="true"
+			android:ellipsize="end"
+			android:textColor="@android:color/white"
+			android:layout_marginLeft="5dp"
+		    android:text="Voice Notes"/>
+  
+	</RelativeLayout>
+    

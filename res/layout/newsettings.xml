@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+ 	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:background="@drawable/background">
+
+	<ImageView
+	    android:id="@+id/newsetting_title_bg"
+	    android:layout_width="fill_parent"
+	    android:src="@drawable/footer_bar_bg"
+	    android:background="@android:color/transparent"
+	    android:layout_height="50dp"
+	    android:scaleType="fitXY"/> 
+        
+	<Button  
+	    android:id="@+id/newsetting_back_but"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+   		android:layout_marginTop="13dp"
+		android:layout_marginLeft="5dp"
+		android:background="@drawable/back_btn"/>
+
+    <TextView android:id="@+id/newsetting_header_content"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+    	android:text="Settings"
+    	android:textColor="#fff" 
+    	android:textSize="30px"
+    	android:textStyle="normal"
+    	android:typeface="serif"
+		android:gravity="center"
+		android:layout_centerHorizontal="true"/>
+		
+	<LinearLayout
+	  	android:orientation="vertical"
+	  	android:layout_below="@+id/newsetting_title_bg"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="fill_parent"
+	  	android:layout_margin="10dp"
+	  	android:background="@drawable/big_yel_bg">
+        
+	<Button  
+	    android:id="@+id/newsetting_but_clearprof"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="57dp"
+   		android:layout_marginTop="15dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+    	android:text="Clear All Proficiency"
+    	android:textColor="#000" 
+    	android:textSize="30px"
+    	android:textStyle="normal"
+    	android:typeface="serif"
+		android:gravity="center"
+		android:background="@drawable/big_grey_btn"/>
+        
+	<Button  
+	    android:id="@+id/newsetting_but_clearbook"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="57dp"
+   		android:layout_marginTop="2dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+    	android:text="Clear All Bookmarks"
+    	android:textColor="#000" 
+    	android:textSize="30px"
+    	android:textStyle="normal"
+    	android:typeface="serif"
+		android:gravity="center"
+		android:background="@drawable/big_grey_btn"/>
+        
+	<Button  
+	    android:id="@+id/newsetting_but_clearvoice"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="57dp"
+   		android:layout_marginTop="2dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+    	android:text="Clear All Voice Notes"
+    	android:textColor="#000" 
+    	android:textSize="30px"
+    	android:textStyle="normal"
+    	android:typeface="serif"
+		android:gravity="center"
+		android:background="@drawable/big_grey_btn"/>
+        
+	<Button  
+	    android:id="@+id/newsetting_but_clearcomment"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="57dp"
+   		android:layout_marginTop="2dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+    	android:text="Clear All comments"
+    	android:textColor="#000" 
+    	android:textSize="30px"
+    	android:textStyle="normal"
+    	android:typeface="serif"
+		android:gravity="center"
+		android:background="@drawable/big_grey_btn"/>
+        
+	<Button  
+	    android:id="@+id/newsetting_but_resetapp"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="57dp"
+   		android:layout_marginTop="2dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+    	android:text="Reset Application"
+    	android:textColor="#000" 
+    	android:textSize="30px"
+    	android:textStyle="normal"
+    	android:typeface="serif"
+		android:gravity="center"
+		android:background="@drawable/big_grey_btn"/>
+        
+	<Button  
+	    android:id="@+id/newsetting_but_apprating"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="57dp"
+   		android:layout_marginTop="2dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+    	android:text="Application Rating"
+    	android:textColor="#000" 
+    	android:textSize="30px"
+    	android:textStyle="normal"
+    	android:typeface="serif"
+		android:gravity="center"
+		android:background="@drawable/big_grey_btn"/>
+	    
+	</LinearLayout>
+	
+</RelativeLayout>

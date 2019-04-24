@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/cardNameLayout"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:background="@android:color/transparent"
+  android:cacheColorHint="@android:color/transparent">
+    
+	    <TextView 
+	    	android:id="@+id/list_card_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	    	android:text="Name of search "
+	    	android:textColor="@android:color/black" 
+	    	android:textSize="16dp"
+	    	android:paddingLeft="6dp"
+	    	android:layout_centerVertical="true"
+	    	 android:layout_marginTop="15dp"
+             android:layout_marginBottom="15dp"
+			android:layout_marginRight="10dp"
+	        android:layout_marginLeft="7dp"
+	       />
+    
+</RelativeLayout>

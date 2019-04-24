@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+ 	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:background="#fff">
+
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:id="@+id/newsetting_title_bg"
+	    android:layout_height="50dp"
+		android:background="#e5e5e5">
+	
+		<Button  
+		    android:id="@+id/settingback"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+	   		android:layout_marginTop="5dp"
+			android:layout_marginLeft="5dp"
+			android:background="@drawable/back_btn"/>
+	
+	    <TextView android:id="@+id/newsetting_header_content"
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dp"
+	    	android:text="@string/Settings"
+			android:textColor="#000"
+	    	android:textSize="23dp"
+			android:textStyle="bold"
+			android:gravity="center"
+			android:layout_centerHorizontal="true"/>
+		
+		</RelativeLayout>
+
+<!--	<ImageView-->
+<!--	    android:id="@+id/setting_title"-->
+<!--	    android:layout_width="fill_parent"-->
+<!--	    android:src="@drawable/settingheader"-->
+<!--	    android:background="@android:color/transparent"-->
+<!--	    android:layout_height="50dp"-->
+<!--	    android:scaleType="fitXY"/> -->
+<!--		-->
+<!--	<TextView  -->
+<!--	    android:layout_width="75dp" -->
+<!--	    android:layout_height="50dp"-->
+<!--	    android:id="@+id/settingback"-->
+<!--		android:textSize="14px"-->
+<!--		android:layout_marginTop="1px"-->
+<!--		android:textStyle="bold"-->
+<!--		android:layout_marginLeft="3px"-->
+<!--	    android:text=""/>-->
+		
+			
+	    <RelativeLayout
+		    android:id="@+id/setting_delete_bookmarks"
+			android:layout_width="fill_parent"
+			android:layout_height="50dp"
+			android:layout_marginTop="40dp"
+			android:layout_marginLeft="0dp"
+			android:layout_centerHorizontal="true"
+			android:layout_below="@+id/newsetting_title_bg"
+			android:background="#e5e5e5">
+	<!--		@layout/customshape   #cc22cc-->
+			
+			<TextView  
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content" 
+			    android:text="@string/deleteallbookmarks"
+				android:textSize="20dp"
+				android:textColor="@android:color/black"
+				android:layout_marginTop="15dp"		
+				android:gravity="center" />
+	
+		</RelativeLayout>
+			
+	    <RelativeLayout
+		    android:id="@+id/setting_delete_proficiency"
+			android:layout_below="@+id/setting_delete_bookmarks"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:layout_marginLeft="50px"
+			android:layout_centerHorizontal="true"
+			android:visibility="gone"
+			android:background="@drawable/big_grey_btn">
+			
+			<TextView  
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content" 
+			    android:text="@string/deleteallproficiency"
+				android:textSize="16dp"
+				android:textStyle="bold"
+				android:textColor="@android:color/black"
+				android:layout_marginTop="10dp"		
+				android:gravity="center" />
+	
+		</RelativeLayout>
+	
+	      <RelativeLayout
+		    android:id="@+id/setting_delete_comments"
+			android:layout_below="@+id/setting_delete_proficiency"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:layout_marginLeft="50px"
+			android:visibility="gone"
+			android:layout_centerHorizontal="true"
+			android:background="@drawable/big_grey_btn">
+			
+			<TextView  
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content" 
+			    android:text="@string/deleteallcomments"
+				android:textSize="16dp"
+				android:textStyle="bold"
+				android:textColor="@android:color/black"
+				android:layout_marginTop="10dp"		
+				android:gravity="center" />
+	
+		</RelativeLayout>
+		
+	       <RelativeLayout
+		    android:id="@+id/setting_delete_voicenotes"
+			android:layout_below="@+id/setting_delete_comments"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:layout_marginLeft="50px"
+			android:visibility="gone"
+			android:layout_centerHorizontal="true"
+			android:background="@drawable/big_grey_btn">
+			
+			<TextView  
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content" 
+			    android:text="@string/deleteallvoicenotes"
+				android:textSize="16dp"
+				android:textStyle="bold"
+				android:textColor="@android:color/black"
+				android:layout_marginTop="10dp"		
+				android:gravity="center" />
+	
+		</RelativeLayout>
+		
+	    <RelativeLayout
+		    android:id="@+id/resetApplication"
+			android:layout_below="@+id/setting_delete_voicenotes"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:layout_marginLeft="50px"
+			android:visibility="gone"
+			android:layout_centerHorizontal="true"
+			android:background="@drawable/big_grey_btn">
+			
+			<TextView  
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content" 
+			    android:text="@string/resetapplication"
+				android:textSize="16dp"
+				android:textStyle="bold"
+				android:textColor="@android:color/black"
+				android:layout_marginTop="10dp"		
+				android:gravity="center" />
+	
+		</RelativeLayout>  
+		
+	    <RelativeLayout
+		    android:id="@+id/randomizeCards"
+			android:layout_below="@+id/resetApplication"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:layout_marginLeft="50px"
+			android:visibility="gone"
+			android:layout_centerHorizontal="true"
+			android:background="@drawable/big_grey_btn">
+			
+			<TextView  
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content" 
+			    android:text="@string/randomizecards"
+				android:textSize="16dp"
+				android:textStyle="bold"
+				android:textColor="@android:color/black"
+				android:layout_marginTop="10dp"		
+				android:gravity="center" />
+			<Button
+			     android:id="@+id/onBtn"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/on"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+			 android:visibility="gone"
+			   />  
+	       <Button
+		    android:id="@+id/offBtn"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/off"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            
+			   />  
+		</RelativeLayout>
+	
+	</RelativeLayout>

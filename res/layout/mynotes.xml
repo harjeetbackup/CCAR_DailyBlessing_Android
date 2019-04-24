@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+	android:background="@drawable/background">
+	
+	
+	<RelativeLayout
+	 	android:id="@+id/mynotes_details_frontrelandroidtop"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp">
+	
+		<ImageView
+		    android:id="@+id/mynotes_details_front_header"
+		    android:layout_width="fill_parent"
+		    android:src="@drawable/top_bar_bg"
+		    android:background="@android:color/transparent"
+		    android:layout_height="50dp"
+		    android:scaleType="fitXY"/> 
+			
+		<Button  
+		    android:id="@+id/mynotes_details_back"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+			android:layout_centerVertical="true"	   
+			android:layout_marginLeft="5dp"
+			android:background="@drawable/back_btn"/>
+			
+		<TextView  
+		    android:id="@+id/mynotes_details_title"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+			android:textSize="23dp"
+			android:textStyle="bold"
+			android:textColor="@android:color/white"
+			android:layout_centerHorizontal="true"	 
+			android:layout_centerVertical="true"	    
+		    android:text="My Voice Notes"/>
+	
+<!--		<Button-->
+<!--		    android:id="@+id/mynotes_details_add_but"-->
+<!--		    android:layout_width="wrap_content"-->
+<!--		    android:background="@drawable/add"-->
+<!--		    android:layout_height="wrap_content"	-->
+<!--		    android:layout_alignParentRight="true"-->
+<!--		    android:layout_marginRight="5dp" -->
+<!--			android:layout_centerVertical="true"	-->
+<!--		    android:scaleType="fitXY"/> -->
+  
+	</RelativeLayout>
+			
+    <LinearLayout 
+		android:id="@+id/mynotes_details_edit_name_lin"
+        android:layout_width="fill_parent"
+   		android:layout_below="@+id/mynotes_details_frontrelandroidtop" 
+		android:layout_marginLeft="30dp"
+		android:layout_marginTop="7dp"
+		android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        >
+    
+<!--		-->
+</LinearLayout>
+</RelativeLayout>
+

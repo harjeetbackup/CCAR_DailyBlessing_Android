@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#fff">
+	
+	<ImageView
+	    android:id="@+id/facebook_header"
+	    android:layout_width="fill_parent"
+	    android:src="@drawable/fbhearer"
+	    android:background="@android:color/transparent"
+	    android:layout_height="50dp"
+	    android:scaleType="fitXY"/> 
+        
+	<TextView  
+	    android:id="@+id/facebook_text_post"
+	    android:layout_width="wrap_content" 
+	    android:textStyle="bold"
+	    android:layout_height="wrap_content"
+    	android:textColor="#000" 
+   		android:layout_marginTop="5dp"
+		android:layout_marginLeft="3dp"
+		android:paddingLeft="5dp"
+		android:layout_below="@+id/facebook_header" 
+    	android:text="Post to Your Wall"
+		android:textSize="22px"
+  		android:background="#0ff8"/>
+  		
+	<TextView  
+	    android:id="@+id/facebook_text_mind"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+    	android:textColor="#883" 
+   		android:layout_marginTop="4dp"
+		android:paddingLeft="5dp"
+		android:layout_marginLeft="3dp"
+		android:layout_below="@+id/facebook_text_post"  
+    	android:text="Message to Publish"
+		android:textSize="20px"
+  		android:background="#0ff8"/>
+        
+    <LinearLayout android:focusable="true"
+		android:id="@+id/facebook_text_mind_lin"
+        android:focusableInTouchMode="true" 
+        android:layout_width="fill_parent"
+		android:layout_below="@+id/facebook_text_mind" 
+        android:layout_height="wrap_content" 
+		android:layout_marginLeft="10dp"
+		android:layout_marginTop="8dp"
+		android:layout_centerHorizontal="true" >
+    
+		<EditText 
+			android:hint="Enter your post" 
+			android:id="@+id/facebook_edit_message"
+			android:layout_width="fill_parent"		
+			android:layout_height="80dp"
+			android:textColor="#000000" 
+			android:textSize="20px"
+			android:paddingLeft="5dp"
+			android:paddingRight="5dp"
+			android:paddingTop="5dp"
+			android:paddingBottom="5dp"
+			android:background="@drawable/butn_editbg"
+			android:layout_marginLeft="1px"/>
+			
+	</LinearLayout>
+
+	<TextView  
+	    android:id="@+id/facebook_text_score"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+   		android:layout_marginTop="4dp"
+		android:layout_below="@+id/facebook_text_mind_lin" 
+		android:paddingLeft="5dp"
+		android:paddingRight="5dp" 
+    	android:text="ICD-10-PCS Flash Cards"
+    	android:textColor="#883" 
+		android:textSize="20px"
+		android:layout_marginLeft="3dp"
+  		android:background="#0ff8"/>
+	
+	<ImageView
+	    android:id="@+id/facebook_nclex_icon"
+	    android:layout_width="38dp"
+	    android:src="@drawable/icon"
+		android:layout_below="@+id/facebook_text_score"  
+	    android:layout_height="38dp"
+   		android:layout_marginTop="8dp"
+   		android:layout_marginLeft="9dp"
+	    android:scaleType="fitXY"/> 
+  		
+	<TextView  
+	    android:id="@+id/facebook_text_via"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+   		android:layout_marginTop="19dp"
+		android:layout_below="@+id/facebook_text_score"  
+    	android:text=" "
+		android:textSize="20px"
+    	android:textColor="#883" 
+		android:layout_marginLeft="5dp"
+    	android:layout_toRightOf="@+id/facebook_nclex_icon"
+  		android:background="#0ff8"/>
+  		
+	<Button  
+	    android:id="@+id/facebook_but_publish"
+	    android:layout_width="91dp" 
+	    android:layout_height="40dp"
+   		android:layout_marginBottom="23dp"
+		android:layout_marginRight="10dp"
+    	android:layout_alignParentRight="true"
+	    android:layout_alignParentBottom="true"
+  		android:background="@drawable/butn_publish"/>
+  		
+	<Button  
+	    android:id="@+id/facebook_but_skip"
+	    android:layout_width="63dp" 
+	    android:layout_height="40dp"
+   		android:layout_marginBottom="23dp"
+		android:layout_marginRight="5dp"
+    	android:layout_toLeftOf="@+id/facebook_but_publish"
+	    android:layout_alignParentBottom="true"
+  		android:background="@drawable/butn_skip"/>
+  		
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+
+		<LinearLayout 
+		    android:id="@+id/sequense_order_layout_bg"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" 
+		  	android:layout_marginLeft="0dp"
+		  	android:layout_centerHorizontal="true"
+		    android:orientation="vertical"
+	    	android:background="@layout/customlistshape">
+			
+		</LinearLayout>
+</RelativeLayout>

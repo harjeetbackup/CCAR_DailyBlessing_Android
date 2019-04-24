@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+	android:background="@drawable/background">
+	
+	
+	<RelativeLayout
+	 	android:id="@+id/voicenote_frontrelandroidtop"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp">
+	
+		<ImageView
+		    android:id="@+id/voicenote_front_header"
+		    android:layout_width="fill_parent"
+		    android:src="@drawable/top_bar_bg"
+		    android:background="@android:color/transparent"
+		    android:layout_height="50dp"
+		    android:scaleType="fitXY"/> 
+			
+		<Button  
+		    android:id="@+id/voicenote_back"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+			android:layout_centerVertical="true"	   
+			android:layout_marginLeft="5dp"
+			android:background="@drawable/back_btn"/>
+			
+		<TextView  
+		    android:id="@+id/voicenote_title"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+			android:textSize="23dp"
+			android:textStyle="bold"
+			android:textColor="@android:color/white"
+			android:layout_centerHorizontal="true"	 
+			android:layout_centerVertical="true"	    
+		    android:text="New Voice Note"/>
+  
+	</RelativeLayout>
+			
+	<TextView  
+	    android:id="@+id/voicenote_total"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/voicenote_frontrelandroidtop"
+		android:textSize="22dp"
+		android:textStyle="normal"
+		android:textColor="@android:color/white"
+		android:layout_marginLeft="15dp"  
+		android:layout_marginTop="7dp" 
+	    android:text="Title"/> 
+       
+    <LinearLayout 
+        android:focusable="true"
+		android:id="@+id/voicenote_edit_name_lin"
+        android:focusableInTouchMode="true" 
+        android:layout_width="fill_parent"
+   		android:layout_below="@+id/voicenote_total" 
+		android:layout_marginLeft="30dp"
+		android:layout_marginTop="7dp"
+		android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" >
+    
+		<EditText 
+			android:hint="Enter Voice Name Title" 
+			android:id="@+id/voicenote_edit_name"
+			android:layout_width="fill_parent"		
+			android:layout_height="wrap_content"
+			android:textColor="#000000" 
+			android:textSize="25px"
+			android:singleLine="true"
+			/>
+		    
+    </LinearLayout>
+	
+	<ImageView
+	    android:id="@+id/voicenote_speaker"
+	    android:layout_width="140dp"
+	    android:src="@drawable/mic"
+	    android:background="@android:color/transparent"
+	    android:layout_height="195dp"
+	    android:scaleType="fitXY"
+	    android:layout_centerInParent="true"/> 
+		    
+	<RelativeLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+		android:layout_marginBottom="50dp"
+	    android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true">
+		    
+		<LinearLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:orientation="horizontal"
+			android:id="@+id/voicenote_progress_lin" >
+	
+			<ProgressBar 
+				android:id="@+id/voicenote_progress" 
+		    	style="?android:attr/progressBarStyleSmall"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:visibility="visible" 
+				android:paddingLeft="10dp"
+				android:layout_margin="5dip" />
+		
+			<TextView 
+			    android:layout_width="130dip" 
+			    android:id="@+id/voicenote_recordingtext"
+			    android:layout_height="wrap_content"
+			    android:text="Recording...."
+			    android:textColor="#ff0002"
+			    android:textSize="22px"
+			    android:layout_marginTop="2px"
+			    android:layout_marginLeft="8dp"
+			    android:layout_toRightOf="@+id/voicenote_progress"/>
+		    
+	    </LinearLayout>
+	
+		<Button
+		    android:id="@+id/voicenote_but_start"
+		    android:layout_below="@+id/voicenote_progress_lin"
+		    android:layout_width="wrap_content"
+			android:background="@drawable/btn_bg_green"
+			android:layout_centerHorizontal="true"
+			android:textSize="22px"
+			android:textStyle="normal"
+		    android:text="Start Recording"
+		    android:layout_marginTop="7dp"
+		    android:textColor="@android:color/white"
+		    android:layout_height="wrap_content"/>
+			
+	
+		<Button
+		    android:id="@+id/voicenote_but_stop"
+		    android:layout_below="@+id/voicenote_progress_lin"
+			android:layout_centerHorizontal="true"
+		    android:layout_width="wrap_content"
+			android:background="@drawable/btn_bg_green"
+			android:textSize="22px"
+			android:textStyle="normal"
+		    android:text="Stop Recording"
+		    android:layout_marginTop="7dp"
+		    android:textColor="@android:color/white"
+		    android:layout_height="wrap_content"/>
+			
+	
+		<Button
+		    android:id="@+id/voicenote_but_done"
+		    android:layout_below="@+id/voicenote_progress_lin"
+			android:layout_centerHorizontal="true"
+		    android:layout_width="wrap_content"
+		    android:layout_marginTop="7dp"
+			android:background="@drawable/btn_bg_green"
+			android:textSize="22px"
+			android:textStyle="normal"
+		    android:text="Done"
+		    android:textColor="@android:color/white"
+		    android:layout_height="wrap_content"/>
+			
+    
+</RelativeLayout> 
+    
+</RelativeLayout>
