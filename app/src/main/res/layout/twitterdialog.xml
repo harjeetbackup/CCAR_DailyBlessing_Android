@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/twitterbg">
+	
+	<ImageView
+	    android:id="@+id/twitter_header"
+	    android:layout_width="fill_parent"
+	    android:src="@drawable/twitterhead9"
+	    android:background="@android:color/transparent"
+	    android:layout_height="50dp"
+	    android:scaleType="fitXY"/> 
+        
+	<TextView  
+	    android:id="@+id/twitter_but_back"
+	    android:layout_width="65dp" 
+	    android:layout_height="36dp"
+   		android:layout_marginTop="7dp"
+		android:layout_marginLeft="3dp"
+  		android:background="#0ff8"/>
+        
+    <LinearLayout android:focusable="true"
+		android:id="@+id/twitter_linear_edit_message"
+        android:focusableInTouchMode="true" 
+        android:layout_width="fill_parent"
+		android:layout_below="@+id/twitter_header" 
+        android:layout_height="wrap_content" 
+		android:layout_marginLeft="15dp"
+		android:layout_marginTop="18dp"
+		android:layout_centerHorizontal="true" >
+    
+		<EditText 
+			android:hint="Enter your tweet" 
+			android:id="@+id/twitter_edit_message"
+			android:layout_width="fill_parent"		
+			android:layout_height="160dp"
+			android:textColor="#000000" 
+			android:padding="10dp"
+			android:textSize="25px"
+			android:background="@drawable/but_editbgtwt9"
+			android:layout_marginLeft="1px"/>
+			
+	</LinearLayout>
+
+	<Button  
+	    android:id="@+id/twitter_but_tweet"
+	    android:layout_width="91dp" 
+	    android:layout_height="50dp"
+   		android:layout_marginBottom="19dp"
+		android:layout_marginRight="10dp"
+    	android:layout_alignParentRight="true"
+	    android:layout_alignParentBottom="true"
+  		android:background="@drawable/butn_tweet9"/>
+  		
+</RelativeLayout>

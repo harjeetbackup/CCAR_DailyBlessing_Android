@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:background="@drawable/background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	
+	<RelativeLayout
+	 	android:id="@+id/indexsearchcards_back_relative"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:background="#e5e5e5">
+
+		<Button  
+		    android:id="@+id/index_searchcardsback_but"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="5dp"
+			android:background="@drawable/back_btn"/>
+		
+		<TextView  
+		    android:id="@+id/index_searchcardsback_totalcardcount"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+			android:textSize="23dp"
+			android:textStyle="bold"
+			android:layout_centerVertical="true"
+			android:textColor="#000"
+			android:layout_centerHorizontal="true"	    
+		    android:text="      Blessings Index"/>
+	        
+   	</RelativeLayout> 
+
+	<ListView 
+		android:id="@+id/myListView" 
+		android:layout_width="wrap_content" 
+	    android:background="@android:color/transparent"
+	    android:cacheColorHint="@android:color/transparent"
+	     android:divider="#DCDCDC"
+	     android:dividerHeight="1px"
+	    android:layout_below="@+id/indexsearchcards_back_relative"
+		android:layout_height="fill_parent">
+	</ListView>
+	
+	<LinearLayout
+		android:orientation="vertical"
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@+id/indexsearchcards_back_relative"
+	    android:background="#fff"
+	    >
+	
+	   <TextView
+            android:id="@+id/indexer_b"
+            android:layout_weight="1"
+            android:layout_width="25dp"
+            android:gravity="center_horizontal"
+            android:layout_height="fill_parent"
+            android:text="B"
+            android:textSize="12dp"
+            android:textColor="#38ACEC"
+            android:typeface="sans"
+            android:textStyle="bold"
+            android:layout_margin="0dip" />
+       
+        <TextView
+            android:id="@+id/indexer_f"
+            android:layout_width="25dp"
+            android:gravity="center_horizontal"
+            android:layout_height="fill_parent"
+            android:layout_margin="0dip"
+            android:text="F"
+            android:textSize="12dp"
+            android:textColor="#38ACEC"
+            android:typeface="sans"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/indexer_o"
+            android:layout_width="25dp"
+            android:gravity="center_horizontal"
+            android:layout_height="fill_parent"
+            android:layout_margin="0dip"
+            android:text="O"
+            android:textSize="12dp"
+            android:textColor="#38ACEC"
+            android:typeface="sans"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+         <TextView
+            android:id="@+id/indexer_p"
+            android:layout_width="25dp"
+            android:gravity="center_horizontal"
+            android:layout_height="fill_parent"
+            android:layout_margin="0dip"
+            android:text="P"
+            android:textSize="12dp"
+            android:textColor="#38ACEC"
+            android:typeface="sans"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+         <TextView
+            android:id="@+id/indexer_r"
+            android:layout_width="25dp"
+            android:gravity="center_horizontal"
+            android:layout_height="fill_parent"
+            android:layout_margin="0dip"
+            android:text="R"
+            android:textSize="12dp"
+          android:textColor="#38ACEC"
+            android:typeface="sans"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+          <TextView
+            android:id="@+id/indexer_s"
+            android:layout_width="25dp"
+            android:gravity="center_horizontal"
+            android:layout_height="fill_parent"
+            android:layout_margin="0dip"
+            android:text="S"
+            android:textSize="12dp"
+            android:textColor="#38ACEC"
+            android:typeface="sans"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+       
+        <TextView
+            android:id="@+id/indexer_t"
+            android:layout_width="25dp"
+            android:gravity="center_horizontal"
+            android:layout_height="fill_parent"
+            android:text="T"
+            android:textSize="12dp"
+            android:textColor="#38ACEC"
+            android:typeface="sans"
+            android:textStyle="bold"
+            android:layout_margin="0dip"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/indexer_u"
+            android:layout_width="25dp"
+            android:gravity="center_horizontal"
+            android:layout_height="fill_parent"
+            android:text="U"
+            android:layout_margin="0dip"
+            android:textSize="12dp"
+            android:textColor="#38ACEC"
+            android:typeface="sans"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+    </LinearLayout>
+	
+
+</RelativeLayout>
