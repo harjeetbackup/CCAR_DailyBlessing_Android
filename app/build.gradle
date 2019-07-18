@@ -5,7 +5,7 @@ android {
     buildToolsVersion "28.0.3"
 
     defaultConfig {
-        applicationId "com.spearheadinc.flashcards.prayerapp"
+        applicationId "com.spearheadinc.flashcards.prayer"
         minSdkVersion 17
         targetSdkVersion 28
         versionCode 1
