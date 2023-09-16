@@ -23,7 +23,7 @@ import android.util.Log;
 public class FCDBHelper extends SQLiteOpenHelper
 {
 //    private static String DB_PATH = "/data/data/com.android.flash.screens/databases/";
-    private static String DB_PATH = "/data/data/com.spearheadinc.flashcards.prayerapp/databases/";
+    private static String DB_PATH = "/data/data/com.spearheadinc.flashcards.prayer/databases/";
     private static String DB_NAME = "PrayerApp1.db3";//"LeekFlashCardss.db3";
     private SQLiteDatabase myDataBase; 
     private final Context myContext;
