@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.spearheadinc.flashcards.prayerapp"
-    android:versionCode="1"
-    android:versionName="1.0" > <!-- <uses-permission android:name="com.android.vending.CHECK_LICENSE" /> -->
+    package="com.spearheadinc.flashcards.prayer"
+    android:versionCode="2"
+    android:versionName="1.01" > <!-- <uses-permission android:name="com.android.vending.CHECK_LICENSE" /> -->
     <uses-sdk
         android:minSdkVersion="17"
-        android:targetSdkVersion="28" />
+        android:targetSdkVersion="34" />
 
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@drawable/icon"
         android:label="@string/app_name"
@@ -18,6 +18,7 @@
         android:testOnly="true" >
         <activity
             android:name="com.spearheadinc.flashcards.prayerapp.LicencingMainActivity"
+            android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
             <intent-filter>
@@ -26,6 +27,7 @@
         </activity>
         <activity
             android:name="com.spearheadinc.flashcards.prayerapp.FlashCards"
+            android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
             <intent-filter>
@@ -36,6 +38,7 @@
         </activity>
         <activity
             android:name="com.spearheadinc.flashcards.prayerapp.DeckView"
+            android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
             <intent-filter>
@@ -44,6 +47,7 @@
         </activity>
         <activity
             android:name="com.spearheadinc.flashcards.prayerapp.CardDetails"
+            android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
             <intent-filter>
@@ -52,6 +56,7 @@
         </activity>
         <activity
             android:name="com.spearheadinc.flashcards.prayerapp.Setting"
+            android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
             <intent-filter>
@@ -60,6 +65,7 @@
         </activity>
         <activity
             android:name="com.spearheadinc.flashcards.prayerapp.Help"
+            android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
             <intent-filter>
@@ -68,6 +74,7 @@
         </activity>
         <activity
             android:name="com.fadavis.pharmphlashfc.phone.Info"
+            android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
             <intent-filter>
@@ -76,6 +83,7 @@
         </activity>
         <activity
             android:name="com.spearheadinc.flashcards.prayerapp.Search"
+            android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
             <intent-filter>
@@ -84,6 +92,7 @@
         </activity>
         <activity
             android:name="com.spearheadinc.flashcards.prayerapp.Info"
+            android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
             <intent-filter>
@@ -92,6 +101,7 @@
         </activity>
         <activity
             android:name="com.spearheadinc.flashcards.prayerapp.CardNotesDetail"
+            android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
             <intent-filter>
@@ -100,6 +110,7 @@
         </activity>
         <activity
             android:name="com.spearheadinc.flashcards.prayerapp.CommentDetails"
+            android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
             <intent-filter>
@@ -108,6 +119,7 @@
         </activity>
         <activity
             android:name="com.spearheadinc.flashcards.prayerapp.IndexSearch"
+            android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
             <intent-filter>
@@ -116,6 +128,7 @@
         </activity>
         <activity
             android:name="com.spearheadinc.flashcards.prayerapp.VoiceNoteDetails"
+            android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
             <intent-filter>
@@ -124,6 +137,7 @@
         </activity>
         <activity
             android:name="com.spearheadinc.flashcards.prayerapp.NewComments"
+            android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
             <intent-filter>
@@ -132,6 +146,7 @@
         </activity>
         <activity
             android:name="com.spearheadinc.flashcards.prayerapp.NewVoiceNotes"
+            android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
             <intent-filter>
@@ -140,6 +155,7 @@
         </activity>
         <activity
             android:name="com.spearheadinc.flashcards.prayerapp.MyComments"
+            android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
             <intent-filter>
@@ -148,6 +164,7 @@
         </activity>
         <activity
             android:name="com.social.share.twitter.PrepareRequestTokenActivity"
+            android:exported="true"
             android:launchMode="singleTask" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -162,6 +179,7 @@
         </activity>
         <activity
             android:name="com.spearheadinc.flashcards.prayerapp.Introduction"
+            android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
             <intent-filter>
@@ -170,6 +188,7 @@
         </activity>
         <activity
             android:name="com.spearheadinc.flashcards.prayerapp.ListCardName"
+            android:exported="true"
             android:label="@string/title_activity_list_card_name"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
@@ -177,11 +196,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-        <provider
-            android:name="com.android.tools.ir.server.InstantRunContentProvider"
-            android:authorities="com.spearheadinc.flashcards.prayerapp.com.android.tools.ir.server.InstantRunContentProvider"
-            android:multiprocess="true" />
     </application>
 
 </manifest>
