@@ -11,6 +11,7 @@ import android.content.SharedPreferences;
 import android.content.res.AssetFileDescriptor;
 import android.database.Cursor;
 import android.media.MediaPlayer;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -118,7 +119,7 @@ public class CardDetails extends Activity//  implements OnTouchListener
         super.onCreate(savedInstanceState);
 		screen = this;
 		setContentView(R.layout.carddetail);
-		 String externalPath = "/data/data/com.spearheadinc.flashcards.prayerapp/files/";
+		 String externalPath = "/data/data/com.spearheadinc.flashcards.prayer/files/";
 	     highlightingJS = "javascript:var call = 0;var mp3FileName; var updateAudioSrcs = function UpdateSrcOfAudios() { var audios = document.getElementsByTagName('audio'); for( var i = 0; i<audios.length; ++i ){ var sources = audios[ i ].getElementsByTagName('source'); for( var j =0; j<sources.length; ++j ) { mp3FileName =sources[j].src.split('/');sources[j].src = \"" + externalPath + "\" + mp3FileName[mp3FileName.length-1];} if( mp3FileName.length ==5 ){ audios[i].src =\"" + externalPath + "\" + mp3FileName[mp3FileName.length-1]; } } };updateAudioSrcs();";
 	     stopAudio = "javascript:var call = 0;var mp3FileName; var updateAudioSrcs = function UpdateSrcOfAudios() { var audios = document.getElementsByTagName('audio'); for( var i = 0; i<audios.length; ++i ){ audios[ i ].pause(); audios[ i ].currentTime = 0; }};updateAudioSrcs();";
 	     
@@ -437,8 +438,14 @@ public class CardDetails extends Activity//  implements OnTouchListener
 		Log.e("cardTypeSelected ", mStartCardNoBookMark + " : " + mLastCardNo);
         mWebView = (WebView) findViewById(R.id.web_front); 
         mWebView.setBackgroundColor(0);
+        /*
         mWebView.setHorizontalScrollBarEnabled(false);
+
         mWebView.setHorizontalScrollbarOverlay(false);
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+			mWebView.getSettings().setMixedContentMode(
+					WebSettings.MIXED_CONTENT_ALWAYS_ALLOW );
+		}
         webSettingsFront = mWebView.getSettings(); 
         webSettingsFront.setJavaScriptEnabled(true); 
         webSettingsFront.setLoadWithOverviewMode(true);
@@ -466,7 +473,7 @@ public class CardDetails extends Activity//  implements OnTouchListener
         webSettingsBack.setSupportZoom(true); //set to true to suport the zoom feature
 //        webSettingsBack.setLightTouchEnabled(true); //set to true enables touches and mouseovers
 
-
+  */
 //        ZOOM_PARAMS.setMargins(0, 0, 0, 60);
 //        FrameLayout mContentView = (FrameLayout) DeckView.getScreen().getWindow().getDecorView().findViewById(android.R.id.content);
 //        final View zoom = this.mWebView.getZoomControls();
@@ -1191,7 +1198,7 @@ public class CardDetails extends Activity//  implements OnTouchListener
 	public void onStop()
 	{
     	super.onStop();
-    	
+    	CardDetails.screen.mWebView.destroy();
 		DeckView.getScreen().isdeleteAllProficiency = false;
 	} 
     
@@ -1741,7 +1748,7 @@ public class CardDetails extends Activity//  implements OnTouchListener
         public void onProgressChanged(WebView view, int newProgress){
 	    	 CardDetails.screen.mWebView.loadUrl(CardDetails.screen.highlightingJS);
 	         System.out.println(  newProgress);
-	
+
              return;
   
 }

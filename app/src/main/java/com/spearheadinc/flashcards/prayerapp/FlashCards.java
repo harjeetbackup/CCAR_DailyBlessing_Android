@@ -55,10 +55,10 @@ public class FlashCards extends Activity
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(screen, DeckView.class));
-				DecompressZip dz = new DecompressZip( "", "/data/data/com.spearheadinc.flashcards.prayerapp/", screen.getResources().openRawResource(R.raw.audio) );
+				DecompressZip dz = new DecompressZip( "", "/data/data/com.spearheadinc.flashcards.prayer/", screen.getResources().openRawResource(R.raw.audio) );
 				
 			      
-				if (!dz.doesDirExist("/data/data/com.spearheadinc.flashcards.prayerapp/files") )
+				if (!dz.doesDirExist("/data/data/com.spearheadinc.flashcards.prayer/files") )
 				{
 						Log.i("CardDetails", "##Creating Dir as it is not found !");
 						SharedPreferences booleanTag = screen.getSharedPreferences( screen.getString( R.string.CHECK_FOR_VERSION), 0 ); // 0 - for private mode
@@ -71,7 +71,7 @@ public class FlashCards extends Activity
 				{
 					if(tagValue == false)
 					{
-						File f = new File("/data/data/com.spearheadinc.flashcards.prayerapp/files");
+						File f = new File("/data/data/com.spearheadinc.flashcards.prayer/files");
 						f.delete();
 						System.out.println("Directory Deleted");
 						SharedPreferences booleanTag = screen.getSharedPreferences( screen.getString( R.string.CHECK_FOR_VERSION), 0 ); // 0 - for private mode
